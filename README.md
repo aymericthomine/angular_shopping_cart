@@ -1,4 +1,9 @@
-# Ecommerce
+# Angular Shopping Cart
+
+Rendu pour le cours d'angular de l'Efrei Mastère Dev Manager Fullstack - M2
+
+Aymeric THOMINE
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
