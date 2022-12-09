@@ -18,10 +18,3 @@
     min-width: 0;
     border: none;
 }
-
-.btnH{
-    display: none;
-}
-.btnO:hover{
-    display:btnH block;
-}
