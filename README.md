@@ -4,8 +4,13 @@ Rendu pour le cours d'angular de l'Efrei Mastère Dev Manager Fullstack - M2
 
 Aymeric THOMINE
 
+## Install dependencies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+Run `npm install`.
+
+## Run server
+
+Run `json-server --watch db.json` for a json server.
 
 ## Development server
 
