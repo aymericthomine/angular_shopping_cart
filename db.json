@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Mi Smart Speaker",
+      "description": "Le son n'a jamais été aussi puissant",
+      "image": "../../../assets/images/xiaomi_mi_smart_speaker.png",
+      "price": 49.99
+    },
+    {
+      "id": "2",
+      "title": "Redmi Note 11 Pro 5G",
+      "description": "Écran AMOLED DotDisplay 120 Hz FHD+Snapdragon® 695 5G",
+      "image": "../../../assets/images/xiaomi_redmi_note_11_pro_5g.png",
+      "price": 299.90
+    },
+    {
+      "id": "3",
+      "title": "Pad 5",
+      "description": "Jouez et travaillez intelligemment",
+      "image": "../../../assets/images/xiaomi_pad_5.png",
+      "price": 399.90
+    },
+    {
+      "id": "4",
+      "title": "TV Q2 55",
+      "description": "Une immersion totale grâce la technologie Quantum",
+      "image": "../../../assets/images/xiaomi_tv_q2_55.png",
+      "price": 799.00
+    },
+    {
+      "id": "5",
+      "title": "Mi Robot Vaccum-Mop 2 Pro",
+      "description": "10 000 vibrations/min., lavage rapide pour un nettoyage exceptionnel",
+      "image": "../../../assets/images/xiaomi_mi_robot_vacuum_mop_2_ultra.png",
+      "price": 329.00
+    },
+    {
+      "id": "6",
+      "title": "Electric Scooter 4 Pro",
+      "description": "Roulez confortablement avec puissance",
+      "image": "../../../assets/images/xiaomi_electric_scooter_4_pro.png",
+      "price": 799.00
+    }
+  ]
+}

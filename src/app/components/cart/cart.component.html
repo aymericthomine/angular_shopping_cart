@@ -1,0 +1,54 @@
+<ng-container *ngIf="products.length!=0">
+    <div class="container" style="margin-top: 20px;">
+        <div class="card-table">
+            <div class="card-product">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>SL.No</th>
+                            <th>Product Name</th>
+                            <th>Product Image</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody *ngFor="let item of products; let i = index" >
+                        <tr>
+                            <td>{{i+1}}</td>
+                            <td>{{item.title}}</td>
+                            <td><img style="width: 120px;" src="{{item.image}}" alt=""></td>
+                            <td>{{item.description}}</td>
+                            <td>{{item.price}}</td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.total}}</td>
+                            <td><button class="btn btn-danger"(click)="delete(item)"><i class="fas fa-trash"></i></button></td>
+                        </tr>
+
+                        <tr>
+                        </tr>
+
+                    </tbody>
+                        <td colspan="4"></td>
+                        <td><button (click)="emptycart()" class="btn btn-danger">Empty cart</button></td>
+                        <td><button routerLink="/products" class="btn btn-success">Shop more</button></td>
+                        <td><button class="btn btn-warning">Checkout</button></td>
+                        <td><strong>Total:</strong>{{grandtotal|currency:'EUR'}}</td>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<!--- Empty cart -->
+
+<ng-container *ngIf="products.length==0">
+    <div class="center">
+        <h4>Votre panier est vide 😢</h4>
+        <h6>Veuillez sélectionner un article et l'ajouter à votre panier</h6>
+        <button style="margin-top: 20px;" routerLink="/products" class="btn btn-dark">CONTINUER VOS ACHATS</button>
+    </div>
+</ng-container>
