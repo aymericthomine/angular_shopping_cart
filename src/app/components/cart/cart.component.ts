@@ -20,12 +20,18 @@ export class CartComponent implements OnInit {
   }
 
   emptycart(){
-    this.toast.warning({detail:'Deleted all from cart', summary:'all items have been deleted', duration:1000})
+    this.toast.warning({detail:'Produits retirés', summary:'Tous les produits ont été retirés', duration:1000})
     this.cart.removeallcart();
   }
 
+  addtocart(item:any){
+    this.toast.success({detail:'Produit ajouté', summary:'Le produit a été a', duration:1000})
+    this.cart.addtocart(item);
+    console.log(item)
+  }
+  
   delete(item:any){
-    this.toast.warning({detail:'Deleted to cart', summary:'item has been deleted', duration:1000})
+    this.toast.warning({detail:'Produit retiré', summary:'Le produit a été retiré', duration:1000})
     this.cart.removecartitem(item);
   }
 }

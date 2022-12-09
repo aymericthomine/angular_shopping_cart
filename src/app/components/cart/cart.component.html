@@ -5,14 +5,15 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>SL.No</th>
-                            <th>Product Name</th>
-                            <th>Product Image</th>
+                            <th>No.</th>
+                            <th>Produit</th>
+                            <th>Image</th>
                             <th>Description</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
                             <th>Total</th>
-                            <th>Delete</th>
+                            <th>Ajouter</th>
+                            <th>Retirer</th>
                         </tr>
                     </thead>
 
@@ -25,6 +26,7 @@
                             <td>{{item.price}}</td>
                             <td>{{item.quantity}}</td>
                             <td>{{item.total}}</td>
+                            <td><button class="btn btn-plus"(click)="addtocart(item)">+</button></td>
                             <td><button class="btn btn-danger"(click)="delete(item)"><i class="fas fa-trash"></i></button></td>
                         </tr>
 
@@ -33,9 +35,9 @@
 
                     </tbody>
                         <td colspan="4"></td>
-                        <td ><button (click)="emptycart()" class="btn btn-danger">Empty cart</button></td>
-                        <td><button routerLink="/products" class="btn btn-success">Shop more</button></td>
-                        <td><button class="btn btn-warning">Checkout</button></td>
+                        <td ><button (click)="emptycart()" class="btn btn-danger">Vider 🗑️</button></td>
+                        <td><button routerLink="/products" class="btn btn-success">Continuer 🛍️</button></td>
+                        <td><button class="btn btn-warning">Régler 💳</button></td>
                         <td><strong>Total:</strong>{{grandtotal|currency:'EUR'}}</td>
                 </table>
             </div>

@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { CartService } from 'src/app/api/cart.service';
 import { ProductsService } from 'src/app/api/products.service';
 import { NgToastService } from 'ng-angular-popup';
+
 
 @Component({
   selector: 'app-products',
@@ -25,9 +26,8 @@ export class ProductsComponent implements OnInit {
 
   // add to cart
   addtocart(item:any){
-    this.toast.success({detail:'Added to cart', summary:'item has been added', duration:1000})
+    this.toast.success({detail:'Produit ajouté', summary:'Le produit a été a', duration:1000})
     this.cart.addtocart(item);
     console.log(item)
   }
-
 }
